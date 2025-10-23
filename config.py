@@ -41,8 +41,11 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-# ✅ Fixed API section
-API_URL = getenv("API_URL", "https://api.example.com/status")  # Must return {"status":"running"}
+# ✅ API URL replaced with JSON data
+API_URL = {
+  "status": "running"
+}
+
 VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.thequickearn.xyz")
 API_KEY = getenv("API_KEY", "NxGBNexGenBots4e1026")
 
